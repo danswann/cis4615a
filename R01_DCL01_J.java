@@ -3,7 +3,7 @@
    Do not reuse public identifiers from the Java Standard Library
 */
 
-class Vector {
+class MyVector {
   private int val = 1;
  
   public boolean isEmpty() {
