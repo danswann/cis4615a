@@ -3,10 +3,12 @@
    Do not synchronize on objects that may be reused
 */
 
-private final Boolean initialized = Boolean.FALSE;
+private int count = 0;
+private final Integer Lock = new Integer(count);
  
 public void doSomething() {
-  synchronized (initialized) {
+  synchronized (Lock) {
+    count++;
     // ...
   }
 }
